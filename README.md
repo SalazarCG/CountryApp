@@ -20,7 +20,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## New Scripts to create the project for production
 
-Run `npm run build:github` to call the script and save it to gitgun for production.
+Run `npm run build:github` to call the script and save it to githun for production.
 
 "scripts": {
     "build:href": "ng build --base-href ./",
