@@ -10,11 +10,18 @@ import { Component } from '@angular/core';
 export class ByCapitalPageComponent {
 
   public countries: Country[] = [];
+  public isLoading: boolean = false;
 
   constructor(private countriesService: CountriesService){}
 
   searchByCapital( term: string):void{
-    this.countriesService.searchCapital(term).subscribe( countries => { this.countries = countries;})
+
+    this.isLoading = true;
+
+    this.countriesService.searchCapital(term).subscribe(
+       countries => { this.countries = countries;
+        this.isLoading = false;
+       });
   }
 
 }

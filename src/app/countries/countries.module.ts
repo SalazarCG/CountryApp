@@ -17,13 +17,13 @@ import { RouterModule } from '@angular/router';
     ByCountryPageComponent,
     ByRegionPageComponent,
     CountryPageComponent,
-    CountryTableComponent
+    CountryTableComponent,
   ],
   imports: [
     CommonModule,
     CountriesRoutingModule,
     SharedModule,
-    RouterModule
-  ]
+    RouterModule,
+  ],
 })
-export class CountriesModule { }
+export class CountriesModule {}
