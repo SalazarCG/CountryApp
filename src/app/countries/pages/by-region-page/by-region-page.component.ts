@@ -23,6 +23,7 @@ export class ByRegionPageComponent implements OnInit {
 
   constructor(private countriesService: CountriesService) {}
 
+  //Grabamos en el cache lo seleccionado
   ngOnInit(): void {
     this.countries =  this.countriesService.cacheStore.byRegion.countries;
     this.selectedRegion = this.countriesService.cacheStore.byRegion.region;
